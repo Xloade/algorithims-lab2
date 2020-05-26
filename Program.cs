@@ -10,10 +10,10 @@ class Program
 
         Console.WriteLine("Manual(m) or Automatic(a) test?");
         string testType = "";
-        while(!(testType.CompareTo("m") == 0 || testType.CompareTo("a") == 0)){
+        while(!(testType.Equals("m") || testType.Equals("a"))){
             testType = Console.ReadLine();
         }
-        if(testType.CompareTo("m") == 0){//if manual
+        if(testType.Equals("m")){//if manual
             manualTestRecursion();
         }
         else{//if automatic
