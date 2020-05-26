@@ -24,7 +24,9 @@ public class DynamicRecursion
     private long L(long n){
         counter++;
         if(n >= 1){
-            return getL(n/15) + getL(n/10) + getL(n/6) + getL(n/6) + (Int64)Math.Sqrt(n);
+            int i;
+            for (i = 0; i < (Int64)Math.Sqrt(n)-1; i++);
+            return getL(n/15) + getL(n/10) + getL(n/6) + getL(n/6) + i;
         }
         else{
             return 0;

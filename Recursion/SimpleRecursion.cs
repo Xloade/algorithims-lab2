@@ -20,7 +20,9 @@ public class SimpleRecursion
     private long L(long n){
         counter++;
         if(n >= 1){
-            return L(n/15) + L(n/10) + L(n/6) + L(n/6) + (Int64)Math.Sqrt(n);
+            int i;
+            for (i = 0; i < (Int64)Math.Sqrt(n)-1; i++);
+            return L(n/15) + L(n/10) + L(n/6) + L(n/6) + i;
         }
         else{
             return 0;
