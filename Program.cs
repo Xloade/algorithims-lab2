@@ -22,7 +22,7 @@ class Program
             manualTestProject();
         }
         else{//if automatic
-            //autoTestRecursion();
+            autoTestRecursion();
             Console.WriteLine("--------------------------------------------------------------");
             autoTestProject();
         }
